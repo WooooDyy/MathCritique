@@ -1,10 +1,11 @@
 # MathCritique
-
-Implementation for the research paper "Enhancing LLM Reasoning via Critique Models with Test-Time and Training-Time Supervision".
+Implementation for the research paper "[Enhancing LLM Reasoning via Critique Models with Test-Time and Training-Time Supervision](http://arxiv.org/abs/2411.16579)".
 
 <p align="center">
   📃 <a href="http://arxiv.org/abs/2411.16579" target="_blank">Paper</a > • 🌐 <a href="https://mathcritique.github.io" target="_blank">Project Page</a > • 🤗 <a href="https://huggingface.co/datasets/MathCritique/MathCritique-76k" target="_blank">MathCritique-76k</a > <br>
 </p >
+
+
 
 ## Introduction
 Training large language models (LLMs) to spend more time thinking and reflection before responding is crucial for effectively solving complex reasoning tasks in fields such as science, coding, and mathematics. However, the effectiveness of mechanisms like self-reflection and self-correction depends on the model’s capacity to accurately assess its own performance, which can be limited by factors such as initial accuracy, question difficulty, and the lack of external feedback. 
