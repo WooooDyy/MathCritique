@@ -3,7 +3,7 @@
 Implementation for the research paper "Enhancing LLM Reasoning via Critique Models with Test-Time and Training-Time Supervision".
 
 <p align="center">
-  📃 <a href="https://arxiv.org/" target="_blank">Paper</a > • 🌐 <a href="https://mathcritique.github.io" target="_blank">Project Page</a > • 🤗 <a href="https://huggingface.co/datasets/MathCritique/MathCritique-76k" target="_blank">MathCritique-76k</a > <br>
+  📃 <a href="http://arxiv.org/abs/2411.16579" target="_blank">Paper</a > • 🌐 <a href="https://mathcritique.github.io" target="_blank">Project Page</a > • 🤗 <a href="https://huggingface.co/datasets/MathCritique/MathCritique-76k" target="_blank">MathCritique-76k</a > <br>
 </p >
 
 ## Introduction
@@ -71,7 +71,7 @@ model_name="meta-llama/Meta-Llama-3-8B"  # Model name
 model_type="Base"  # Model type
 template="default"  # Llama3 default template (llamafactory type)
 ITER_NUM=3  # Number of iterations
-EXP_NUM="7origin"  # Experiment identifier
+EXP_NUM="1origin"  # Experiment identifier
 actor_model_name=${model_name}  # Path to the actor model
 USE_CRITIC=0  # Whether to use a critic (0 = No, 1 = Yes)
 USE_ORIGINAL=1  # Whether to use the original dataset (0 = No, 1 = Yes)
@@ -106,5 +106,13 @@ Zhiheng Xi: [zhxi22@m.fudan.edu.cn](zhxi22@m.fudan.edu.cn)
 ## Citation
 Please cite the paper if you use our data, model or code.
 ```
-todo
+@misc{xi2024enhancingllmreasoningcritique,
+      title={Enhancing LLM Reasoning via Critique Models with Test-Time and Training-Time Supervision}, 
+      author={Zhiheng Xi and Dingwen Yang and Jixuan Huang and Jiafu Tang and Guanyu Li and Yiwen Ding and Wei He and Boyang Hong and Shihan Do and Wenyu Zhan and Xiao Wang and Rui Zheng and Tao Ji and Xiaowei Shi and Yitao Zhai and Rongxiang Weng and Jingang Wang and Xunliang Cai and Tao Gui and Zuxuan Wu and Qi Zhang and Xipeng Qiu and Xuanjing Huang and Yu-Gang Jiang},
+      year={2024},
+      eprint={2411.16579},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2411.16579}, 
+}
 ```
