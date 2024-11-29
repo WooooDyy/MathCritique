@@ -12,13 +12,25 @@ Training large language models (LLMs) to spend more time thinking and reflection
 
 In this paper, we delve into **a two-player paradigm** that separates the roles of reasoning and critique models, where the critique model provides step-level feedback to supervise the reasoning (actor) model during both test-time and train-time. 
 
+![image](https://github.com/user-attachments/assets/0d4d0f08-07c1-4994-8c66-c370d11c0d58)
+
 We first propose **AutoMathCritique**, an automated and scalable framework for collecting critique data, resulting in a dataset of responses paired with step-level feedback **(MathCritique-76k**). 
+
+![image](https://github.com/user-attachments/assets/84038c52-36e0-404f-87ef-7ccf53b76ae0)
 
 Fine-tuning language models with this dataset enables them to generate natural language feedback for mathematical reasoning. We demonstrate that the critique models consistently improve the actor’s performance on difficult queries at test- time, especially when scaling up inference-time computation. 
 
+![image](https://github.com/user-attachments/assets/00256f3f-e375-41ac-aec0-6e5d901d57da)
+![image](https://github.com/user-attachments/assets/14e86012-535d-4cfd-bf87-43cc05a07a01)
+
+
 Motivated by these findings, we introduce the critique-based supervision to the actor’s self-training process, and propose a **critique-in-the-loop self-improvement method**. Experiments show that the method improves the actor’s exploration efficiency and solution diversity, especially on challenging queries, leading to a stronger reasoning model. 
 
+![image](https://github.com/user-attachments/assets/78f8396d-cc01-4975-8de9-730394196494)
+
 Lastly, we take the preliminary step to explore training **self-talk reasoning models via critique data** and showcase its potential.
+
+![image](https://github.com/user-attachments/assets/3f204c8d-a7d0-4d61-89f3-93e730d3251e)
 
 
 
